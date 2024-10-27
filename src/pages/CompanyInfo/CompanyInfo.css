@@ -1,0 +1,123 @@
+.company-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f16363, #5c4243);
+    padding: 20px;
+  }
+  
+  .content-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #634b4b;
+  }
+  
+  .description {
+    font-size: 1.125rem;
+    color: #806b6b;
+    margin-bottom: 30px;
+  }
+  
+  .session-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #513738;
+  }
+  
+  .session-details p {
+    font-size: 1.125rem;
+    margin: 5px 0;
+  }
+  
+  .note {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #b27e7e;
+  }
+  
+  .proceed-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #f75555;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  }
+  
+  .proceed-button:hover {
+    background-color: #ea3333;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .animate-slide-down {
+    animation: slide-down 0.8s ease-in-out;
+  }
+  
+  .animate-zoom-in {
+    animation: zoom-in 0.8s ease;
+  }
+  
+  .animate-bounce {
+    animation: bounce 1.5s infinite;
+  }
+  
